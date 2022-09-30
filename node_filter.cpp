@@ -1,7 +1,6 @@
 #include <ros/ros.h>
 #include <sensor_msgs/LaserScan.h>
 #include <iostream>
-#include "sl_lidar.h"
 #include <math.h>
 
 
