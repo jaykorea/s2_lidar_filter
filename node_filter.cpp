@@ -76,7 +76,7 @@ float res_per_deg = (int)input_scan.ranges.size() / (float)360.0;
 float las_mid_ran = res_per_deg * (float)180.0;
 float deg_60 = floor(res_per_deg * (float)60.0);
 
-for (unsigned int i = int(floor(las_mid_ran - deg_60)); i < int(floor(las_mid_ran+deg_60)); ++i) { // left view of lidar frame <---|(0 degree)
+for (unsigned int i = int(floor(las_mid_ran - deg_60)); i < int(floor(las_mid_ran+deg_60)); i++) { // left view of lidar frame <---|(0 degree)
 //filtered_scan.ranges[count] = input_scan.ranges[i];
 // if ( (input_scan.ranges[i] > 0.1) &&(258<=ct<=460)) {
 // filtered_scan.ranges[ct] = input_scan.ranges[i];
