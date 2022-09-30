@@ -30,9 +30,10 @@ if (!input_scan.ranges.empty()) {
     for (unsigned int i = int(floor(las_mid_ran - deg_60)); i < int(floor(las_mid_ran+deg_60)); i++) { // left view of lidar frame <---|(0 degree)
         filtered_scan.ranges[i] = NAN;
 }
-        filtered_scan.header.frame_id = "base_scan";
+        filtered_scan.header.frame_id = "base_laser_link";
         filtered_scan.header.stamp = start_time;
 
+    //ROS_INFO("ranges size :  %d", input_scan.ranges.size());
     return true;
 }
 
